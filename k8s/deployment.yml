@@ -26,7 +26,8 @@ spec:
   selector:
     app: conversao-temperatura
   ports:
-  - port: 80
-    targetPort: 8080 # Porta do container web
-    nodePort: 30000
-  type: NodePort
+    - port: 80
+      targetPort: 8080 # Porta do container web
+      nodePort: 30000
+  type: LoadBalancer
+  #NodePort
